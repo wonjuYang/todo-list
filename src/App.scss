@@ -1,1 +1,13 @@
 @import "~bootstrap/scss/bootstrap";
+
+$bgcolor: black;
+$textcolor: white;
+$fontsize: 18px;
+$t-center: center;
+
+
+body {
+    background-color: $bgcolor;
+    color: $textcolor;
+    text-align: $t-center;
+  }
