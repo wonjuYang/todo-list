@@ -1,16 +1,20 @@
 import React, {Component} from 'react';
+import PageTemplate from './PageTemplate';
+import TodoInput from './TodoInput/TodoInput.js';
 
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
 class App extends Component {
-  render(){
+  render() {
     return (
-      <div>
-        일정 관리
-      </div>
-    )
+      <PageTemplate>
+        <TodoInput/>
+      </PageTemplate>
+    );
   }
 }
+
+
 export default App;
