@@ -5,6 +5,12 @@ import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);
 
 class TodoItem extends Component {
+
+    shouldComponentUpdate(nextProps, nextState){
+        return this.props.done !== nextProps.done;
+    }
+
+    
     render() {
 
         //레퍼런스를 만든 것, 이렇게 하면 props를 사용할 때마다 this.props.onToggle처럼 매번 앞부분에 붙이는 this.props 생략 가능
